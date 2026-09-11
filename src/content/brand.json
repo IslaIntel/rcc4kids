@@ -1,0 +1,61 @@
+{
+  "name": "Rosslyn Children's Center",
+  "short": "RCC",
+  "domain": "rcc4kids.com",
+  "tagline": "Guiding children's learning through play since 1991.",
+  "voice": {
+    "tone": ["warm", "specific", "adult", "honest"],
+    "do": [
+      "Use emergent, child-led, play-powered language",
+      "Name real ratios, tenure, and waitlist honestly",
+      "Speak to dual-income Rosslyn parents as partners"
+    ],
+    "dont": [
+      "little ones",
+      "kiddos",
+      "where magic happens",
+      "Reggio Emilia on the public site unless confirmed"
+    ]
+  },
+  "palette": {
+    "charcoal": "#303030",
+    "green": "#009040",
+    "cardinal": "#E05020",
+    "gold": "#F0E030",
+    "sky": "#2070B0",
+    "paper": "#F6F1E8",
+    "cream": "#FAF8F4",
+    "ink": "#1A1A1A"
+  },
+  "classroomColors": {
+    "blue-jays": "#2070B0",
+    "cardinals": "#E05020",
+    "koalas": "#009040",
+    "swans": "#D4A82A",
+    "lion-cubs": "#C47A20",
+    "wolves": "#4A5568",
+    "bears": "#8B5E3C"
+  },
+  "logos": {
+    "horizontal4c": "/brand/RCC_Horizontal-4C.png",
+    "nvMag2026": "/brand/BestDaycare26Teal.webp"
+  },
+  "typography": {
+    "documentation": { "display": "Newsreader", "body": "IBM Plex Sans" },
+    "viewbook": { "display": "Fraunces", "body": "Outfit" },
+    "blocks": { "display": "Syne", "body": "DM Sans" }
+  },
+  "motion": {
+    "durationFast": 280,
+    "durationMid": 700,
+    "durationSlow": 900,
+    "ease": "cubic-bezier(0.16, 1, 0.3, 1)"
+  },
+  "photography": {
+    "rules": [
+      "Prefer environments, materials, and documentation walls",
+      "No photorealistic generated children's faces",
+      "No stock-photo daycare aesthetic"
+    ]
+  }
+}
