@@ -2,6 +2,7 @@ export const SECTION_IDS = [
   "shell",
   "hero",
   "proof",
+  "choose-guide",
   "philosophy",
   "curriculum",
   "programs",
@@ -13,14 +14,13 @@ export const SECTION_IDS = [
   "voices",
   "careers",
   "tour",
-  "switcher",
 ] as const;
 
 export type SectionId = (typeof SECTION_IDS)[number];
 
-export const CONCEPTS = ["documentation", "viewbook", "blocks"] as const;
+export const CONCEPTS = ["viewbook"] as const;
 export type Concept = (typeof CONCEPTS)[number];
 
 export function conceptPath(concept: Concept) {
-  return `/concepts/${concept}`;
+  return concept === "viewbook" ? "/" : `/concepts/${concept}`;
 }

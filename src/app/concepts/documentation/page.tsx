@@ -1,5 +1,5 @@
-import { DocumentationLanding } from "@/components/concepts/DocumentationLanding";
+import { redirect } from "next/navigation";
 
-export default function DocumentationPage() {
-  return <DocumentationLanding />;
+export default function DocumentationConcept() {
+  redirect("/");
 }

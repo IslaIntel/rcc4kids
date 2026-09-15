@@ -1,5 +1,4 @@
 import { test, expect } from "@playwright/test";
-import { conceptPath } from "./sections";
 
 test("reduced motion disables marquee animation", async ({ browser }) => {
   const context = await browser.newContext({
@@ -12,7 +11,7 @@ test("reduced motion disables marquee animation", async ({ browser }) => {
     if (msg.type() === "error") errors.push(msg.text());
   });
 
-  await page.goto(conceptPath("blocks"));
+  await page.goto("/");
   await page.waitForLoadState("networkidle");
 
   const marqueeRunning = await page.evaluate(() => {
@@ -27,12 +26,12 @@ test("reduced motion disables marquee animation", async ({ browser }) => {
   await context.close();
 });
 
-test("no console errors on documentation desktop", async ({ page }) => {
+test("no console errors on homepage desktop", async ({ page }) => {
   const errors: string[] = [];
   page.on("console", (msg) => {
     if (msg.type() === "error") errors.push(msg.text());
   });
-  await page.goto(conceptPath("documentation"));
+  await page.goto("/");
   await page.waitForLoadState("networkidle");
   await page.waitForTimeout(800);
   expect(errors.filter((e) => !/favicon/i.test(e))).toHaveLength(0);

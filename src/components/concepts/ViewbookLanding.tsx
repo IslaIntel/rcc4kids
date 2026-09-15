@@ -12,7 +12,6 @@ import { Tuition } from "@/components/sections/Tuition";
 import { Voices } from "@/components/sections/Voices";
 import { CareersBand } from "@/components/sections/CareersBand";
 import { TourForm } from "@/components/site/TourForm";
-import { ChapterRail } from "./viewbook/ChapterRail";
 import { ChooseGuide } from "./viewbook/ChooseGuide";
 import { Section } from "@/components/sections/Section";
 
@@ -20,16 +19,15 @@ export function ViewbookLanding() {
   const concept = "viewbook" as const;
   return (
     <LandingShell concept={concept}>
-      <ChapterRail />
       <Hero concept={concept} />
-      <ProofStrip concept={concept} />
+      <ProofStrip />
       <Section id="guide" className="py-12">
         <ChooseGuide />
       </Section>
       <Philosophy concept={concept} />
       <Curriculum concept={concept} />
-      <Programs concept={concept} />
-      <Flock concept={concept} />
+      <Programs />
+      <Flock />
       <Rosslyn />
       <TourForm concept={concept} />
       <People />

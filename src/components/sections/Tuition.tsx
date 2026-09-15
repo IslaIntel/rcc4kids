@@ -6,7 +6,7 @@ export function Tuition() {
   return (
     <Section id="tuition">
       <ClipReveal>
-        <p className="text-xs font-medium uppercase tracking-[0.2em] text-[var(--tone-accent)]">
+        <p className="text-xs font-medium uppercase tracking-[0.2em] text-[var(--tone-muted)]">
           Tuition & fees
         </p>
         <h2 className="mt-3 font-display text-3xl text-[var(--tone-fg)]">

@@ -56,12 +56,5 @@ export async function checkEngagement(page: Page, sectionId: string) {
       : false;
   }
 
-  if (sectionId === "switcher") {
-    const link = page.locator("[data-concept-link]").first();
-    result.tapMin = (await link.boundingBox())?.height
-      ? (await link.boundingBox())!.height >= 40
-      : false;
-  }
-
   return result;
 }

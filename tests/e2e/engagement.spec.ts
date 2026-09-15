@@ -23,13 +23,4 @@ for (const concept of CONCEPTS) {
     expect(json.concept).toBe(concept);
     await expect(page.locator("[data-form-success]")).toBeVisible();
   });
-
-  test(`switcher navigation · ${concept}`, async ({ page }) => {
-    await page.goto(conceptPath(concept));
-    await waitForSettle(page);
-    const switcher = page.locator('[data-section="switcher"]');
-    await expect(switcher).toBeVisible();
-    await page.locator('[data-concept-link="hub"]').click();
-    await expect(page).toHaveURL(/\/concepts$/);
-  });
 }

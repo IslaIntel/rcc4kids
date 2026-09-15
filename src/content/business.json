@@ -6,7 +6,7 @@
     "type": "501(c)(3)",
     "formed": 1991,
     "irsRulingYear": 1993,
-    "governance": "Parent Board of Directors — no private owners"
+    "governance": "Parent Board of Directors. No private owners."
   },
   "contact": {
     "phone": "(703) 524-0202",
@@ -23,7 +23,7 @@
   },
   "hours": {
     "licensed": "7:30am – 6:00pm, Monday – Friday",
-    "contactPageNote": "Contact page lists 8:00am – 6:00pm — licensed hours take precedence on site"
+    "contactPageNote": "Contact page lists 8:00am – 6:00pm. Licensed hours take precedence on site."
   },
   "license": {
     "type": "Child Day Center",
@@ -100,37 +100,37 @@
       },
       {
         "title": "Admission & waitlist",
-        "body": "Admission depends on classroom availability. Families often spend time on a waitlist — we keep you informed on your position."
+        "body": "Admission depends on classroom availability. Families often spend time on a waitlist, and we keep you informed on your position."
       }
     ],
     "enrollingFor": "2025/2026 school year"
   },
   "leadership": [
-    { "name": "Dawn Snyder", "title": "Executive Director", "joined": 2023 },
-    { "name": "Antonella Barone", "title": "Director of Operations", "joined": 2014 },
-    { "name": "Curtis Andrews", "title": "Education Manager", "joined": 2008 }
+    { "name": "Dawn Snyder", "title": "Executive Director", "joined": 2023, "photo": "/photos/people/dawn.png" },
+    { "name": "Antonella Barone", "title": "Director of Operations", "joined": 2014, "photo": "/photos/people/antonella.png" },
+    { "name": "Curtis Andrews", "title": "Education Manager", "joined": 2008, "photo": "/photos/people/curtis.png" }
   ],
   "educators": [
-    { "name": "Ms. Camielle", "joined": 2025 },
-    { "name": "Ms. Dani", "joined": 2024 },
-    { "name": "Ms. Danielle", "joined": 2025 },
-    { "name": "Ms. Emma", "joined": 2025 },
-    { "name": "Ms. Inaya", "joined": 2021 },
-    { "name": "Ms. Jade", "joined": 2025 },
-    { "name": "Ms. May", "joined": 2024 },
-    { "name": "Ms. Mira", "joined": 2012 },
-    { "name": "Mr. Ra'Shamier", "joined": 2023 },
-    { "name": "Mr. Zander", "joined": 2022 },
-    { "name": "Ms. Reyna", "joined": 2025 },
-    { "name": "Ms. Sophia", "joined": 2025 },
-    { "name": "Ms. Tram", "joined": 2012 }
+    { "name": "Ms. Camielle", "joined": 2025, "photo": "/photos/people/camielle.png" },
+    { "name": "Ms. Dani", "joined": 2024, "photo": "/photos/people/dani.png" },
+    { "name": "Ms. Danielle", "joined": 2025, "photo": "/photos/people/danielle.png" },
+    { "name": "Ms. Emma", "joined": 2025, "photo": "/photos/people/emma.png" },
+    { "name": "Ms. Inaya", "joined": 2021, "photo": "/photos/people/inaya.png" },
+    { "name": "Ms. Jade", "joined": 2025, "photo": "/photos/people/jade.png" },
+    { "name": "Ms. May", "joined": 2024, "photo": "/photos/people/may.png" },
+    { "name": "Ms. Mira", "joined": 2012, "photo": "/photos/people/mira.png" },
+    { "name": "Mr. Ra'Shamier", "joined": 2023, "photo": "/photos/people/rashamier.png" },
+    { "name": "Mr. Zander", "joined": 2022, "photo": "/photos/people/zander.png" },
+    { "name": "Ms. Reyna", "joined": 2025, "photo": "/photos/people/reyna.png" },
+    { "name": "Ms. Sophia", "joined": 2025, "photo": "/photos/people/sophia.png" },
+    { "name": "Ms. Tram", "joined": 2012, "photo": "/photos/people/tram.png" }
   ],
   "board": {
     "website": [
       { "name": "Marc Azzarello", "role": "President" },
-      { "name": "Kaelyn Lowmaster", "role": "Vice President" },
-      { "name": "Alan Jefferis", "role": "Treasurer" },
-      { "name": "Priyal Bhatt", "role": "Board Member" }
+      { "name": "Alan Jefferis", "role": "Treasurer", "photo": "/photos/people/alan-jefferis.png" },
+      { "name": "Priyal Bhatt", "role": "Board Member", "photo": "/photos/people/priyal-bhatt.png" },
+      { "name": "Caitlin Daniels", "role": "Board Member" }
     ],
     "charityNavigator": [
       { "name": "Jessica Callaway", "role": "Secretary" },
@@ -211,14 +211,14 @@
   },
   "philosophy": {
     "beliefs": [
-      "Each member of the community — children, families, and educators — feels valued in a physically, emotionally, and cognitively safe atmosphere.",
+      "Each member of the community (children, families, and educators) feels valued in a physically, emotionally, and cognitively safe atmosphere.",
       "Knowledge and creativity occur through interactions with people, the environment, and concepts.",
       "Authentic learning happens when children collaborate, compare ideas, and inspire each other's thinking.",
       "Children and adults develop a powerful sense of self when they explore new areas and find independent solutions.",
-      "Family–educator partnerships are sustained through conversations, newsletters, classroom visits, conferences, and events.",
+      "Family-educator partnerships are sustained through conversations, newsletters, classroom visits, conferences, and events.",
       "Each child's unique learning style is better understood when families and educators share perspectives and collaborate."
     ],
-    "curriculum": "Emergent, play-based curriculum determined by what is relevant to the children — a new puppy, a sibling, a move. Each member must feel heard, supported, and challenged."
+    "curriculum": "Emergent, play-based curriculum determined by what is relevant to the children: a new puppy, a sibling, a move. Each member must feel heard, supported, and challenged."
   },
   "nondiscrimination": "Rosslyn Children's Center will not discriminate based on race, color, national origin, gender, age, marital or military status, sexual orientation, gender identity, religion, disability, political ideology or any other basis protected by federal, state, or local law. Rosslyn Children's Center acknowledges and protects the rights of children, families, and staff to their own culture, customs, beliefs, and practices.",
   "ctas": {

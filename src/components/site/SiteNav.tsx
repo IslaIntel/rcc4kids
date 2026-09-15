@@ -5,11 +5,11 @@ import Link from "next/link";
 import { useState } from "react";
 import clsx from "clsx";
 import { business, brand } from "@/lib/copy";
-import type { ConceptSlug } from "@/lib/types";
 import { media } from "@/lib/media";
 
 const links = [
   { href: "#programs", label: "Programs" },
+  { href: "#flock", label: "Classrooms" },
   { href: "#philosophy", label: "Philosophy" },
   { href: "#people", label: "People" },
   { href: "#enrollment", label: "Enrollment" },
@@ -17,7 +17,7 @@ const links = [
   { href: "#careers", label: "Careers" },
 ];
 
-export function SiteNav({ concept }: { concept: ConceptSlug }) {
+export function SiteNav() {
   const [open, setOpen] = useState(false);
 
   return (
@@ -26,10 +26,10 @@ export function SiteNav({ concept }: { concept: ConceptSlug }) {
       className="sticky top-0 z-50 border-b border-black/5 bg-[var(--tone-paper)]/90 backdrop-blur-md"
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3 md:px-8">
-        <Link href={`/concepts/${concept}`} className="relative z-10 flex min-h-11 items-center">
+        <Link href="/" className="relative z-10 flex min-h-11 items-center">
           <Image
             src={media.logo}
-            alt={brand.name}
+            alt={brand.legalName}
             width={160}
             height={46}
             className="h-9 w-auto md:h-10"
@@ -61,7 +61,7 @@ export function SiteNav({ concept }: { concept: ConceptSlug }) {
           <a
             href="#tour"
             data-cta="primary"
-            className="hidden min-h-11 items-center rounded-full bg-[var(--tone-accent)] px-5 text-sm font-semibold text-white md:inline-flex"
+            className="hidden min-h-11 items-center rounded-full bg-[var(--tone-primary)] px-5 text-sm font-semibold text-[var(--tone-on-primary)] md:inline-flex"
           >
             {business.ctas.primary}
           </a>
@@ -102,7 +102,7 @@ export function SiteNav({ concept }: { concept: ConceptSlug }) {
               href="#tour"
               data-cta="primary"
               className={clsx(
-                "inline-flex min-h-11 items-center justify-center rounded-full bg-[var(--tone-accent)] px-5 font-semibold text-white"
+                "inline-flex min-h-11 items-center justify-center rounded-full bg-[var(--tone-primary)] px-5 font-semibold text-[var(--tone-on-primary)]"
               )}
               onClick={() => setOpen(false)}
             >
