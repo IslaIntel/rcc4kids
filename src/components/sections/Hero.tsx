@@ -15,7 +15,7 @@ export function Hero({ concept }: { concept: ConceptSlug }) {
       innerClassName="grid items-center gap-8 lg:grid-cols-2"
     >
       <ClipReveal>
-        <p className="mb-3 text-xs font-medium uppercase tracking-[0.2em] text-[var(--tone-accent)]">
+        <p className="mb-3 text-xs font-medium uppercase tracking-[0.2em] text-[var(--tone-muted)]">
           {voice.hero.kicker}
         </p>
         <h1 className="font-display text-4xl leading-[1.05] text-[var(--tone-fg)] md:text-5xl lg:text-6xl">
@@ -28,7 +28,7 @@ export function Hero({ concept }: { concept: ConceptSlug }) {
           <a
             href="#tour"
             data-cta="primary"
-            className="inline-flex min-h-11 items-center rounded-full bg-[var(--tone-accent)] px-6 text-sm font-semibold text-white"
+            className="inline-flex min-h-11 items-center rounded-full bg-[var(--tone-primary)] px-6 text-sm font-semibold text-[var(--tone-on-primary)]"
           >
             {business.ctas.primary}
           </a>
@@ -42,33 +42,16 @@ export function Hero({ concept }: { concept: ConceptSlug }) {
         </div>
       </ClipReveal>
 
-      <ClipReveal className="relative">
-        {concept === "blocks" && (
-          <div className="pointer-events-none absolute -left-4 top-4 h-24 w-24 rounded-2xl bg-[#009040]/20 motion-safe:animate-float" />
-        )}
-        {concept === "blocks" && (
-          <div className="pointer-events-none absolute bottom-8 right-0 h-16 w-16 rounded-full bg-[#E05020]/25 motion-safe:animate-float-delayed" />
-        )}
-        <div
-          className={
-            concept === "documentation"
-              ? "relative overflow-hidden rounded-sm border border-black/10 bg-white p-2 shadow-sm"
-              : "relative overflow-hidden rounded-2xl"
-          }
-        >
+      <ClipReveal>
+        <div className="relative overflow-hidden rounded-2xl">
           <Image
-            src={media.hero[concept]}
+            src={media.hero.viewbook}
             alt="RCC classroom environment"
             width={1024}
             height={683}
             className="h-auto w-full object-cover"
             priority
           />
-          {concept === "documentation" && (
-            <p className="mt-2 font-mono text-xs text-[var(--tone-muted)]">
-              Fig. 1 — Materials table, morning rhythm
-            </p>
-          )}
         </div>
       </ClipReveal>
     </Section>

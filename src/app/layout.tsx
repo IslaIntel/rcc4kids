@@ -1,18 +1,23 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Sans, Newsreader, Fraunces, Outfit, Syne, DM_Sans } from "next/font/google";
+import { Nunito, Nunito_Sans } from "next/font/google";
 import "./globals.css";
 import business from "@/content/business.json";
 import brand from "@/content/brand.json";
 
-const newsreader = Newsreader({ subsets: ["latin"], variable: "--font-newsreader" });
-const ibmPlex = IBM_Plex_Sans({ subsets: ["latin"], weight: ["400", "500", "600"], variable: "--font-ibm" });
-const fraunces = Fraunces({ subsets: ["latin"], variable: "--font-fraunces" });
-const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
-const syne = Syne({ subsets: ["latin"], variable: "--font-syne" });
-const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-dm" });
+const nunito = Nunito({
+  subsets: ["latin"],
+  weight: ["400", "700", "800"],
+  variable: "--font-nunito",
+});
+
+const nunitoSans = Nunito_Sans({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: "--font-nunito-sans",
+});
 
 export const metadata: Metadata = {
-  title: `${brand.name} | Rosslyn Preschool & Daycare`,
+  title: `${brand.name} | ${brand.legalName}`,
   description: brand.tagline,
 };
 
@@ -20,9 +25,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ChildCare",
-    name: brand.name,
+    name: brand.legalName,
+    alternateName: brand.name,
     telephone: business.contact.phone,
     email: business.contact.email,
+    url: "https://www.rcc4kids.com",
     address: {
       "@type": "PostalAddress",
       streetAddress: business.contact.address.street,
@@ -35,11 +42,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   };
 
   return (
-    <html
-      lang="en"
-      className={`${newsreader.variable} ${ibmPlex.variable} ${fraunces.variable} ${outfit.variable} ${syne.variable} ${dmSans.variable}`}
-    >
-      <body>
+    <html lang="en" className={`${nunito.variable} ${nunitoSans.variable}`}>
+      <body className="font-sans antialiased">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

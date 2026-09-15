@@ -4,6 +4,7 @@ import type { ConceptSlug } from "./types";
 
 export const org = {
   name: brand.name,
+  legalName: brand.legalName,
   short: brand.short,
   tagline: brand.tagline,
   since: business.legal.formed,
@@ -56,7 +57,7 @@ export const hubCopy = {
   eyebrow: "Design directions",
   title: "Three ways to tell the same Rosslyn story",
   lede:
-    "Each direction takes identical facts — seven classrooms, emergent curriculum, Freedom Park, a parent board — and commits to a different design principle. Same substance, three arguments about what a family should feel first.",
+    "Each direction takes identical facts (seven classrooms, emergent curriculum, Freedom Park, a parent board) and commits to a different design principle. Same substance, three arguments about what a family should feel first.",
   how: "Open each one and scroll the whole page. The floating switcher moves between them.",
   open: "Open direction",
 };
@@ -79,6 +80,7 @@ export const guides = [
     title: "Executive Director",
     joined: 2023,
     quote: "Community is at the core of every intention, decision, and choice at RCC.",
+    photo: "/photos/people/dawn.png",
   },
   {
     id: "antonella",
@@ -86,13 +88,15 @@ export const guides = [
     title: "Director of Operations",
     joined: 2014,
     quote: "Families deserve transparency on ratios, tuition, and what a real day looks like.",
+    photo: "/photos/people/antonella.png",
   },
   {
     id: "curtis",
     name: "Curtis Andrews",
     title: "Education Manager",
     joined: 2008,
-    quote: "Our lesson plans follow what is relevant to the children — not a calendar.",
+    quote: "Our lesson plans follow what is relevant to the children, not a calendar.",
+    photo: "/photos/people/curtis.png",
   },
 ];
 
@@ -112,28 +116,28 @@ const conceptVoices: Record<
         "Analog documentation, real ratios, and a community that has guided children's learning through play since 1991. See the materials, the park walks, and the teacher language that makes RCC different from a chain.",
     },
     philosophyIntro:
-      "At RCC, a sense of community is not a tagline — it is how we document, decide, and show up for each child.",
+      "At RCC, a sense of community is not a tagline. It is how we document, decide, and show up for each child.",
     curriculumIntro:
       "Lesson plans follow what is relevant: a new puppy, a sibling, a move. Learning becomes personal when children feel heard.",
   },
   viewbook: {
     hero: {
-      kicker: "Admissions viewbook",
-      headline: "Walk the place before you visit.",
+      kicker: "Rosslyn Children's Center",
+      headline: "Guiding children's learning through play.",
       lede:
-        "Choose a guide, follow the campus from Wilson Blvd to Freedom Park, and see enrollment steps, tuition, and classroom availability — all before you schedule your tour.",
+        "A community of families and educators in the heart of Rosslyn. Infant through preschool, seven classrooms, and a neighborhood school since 1991.",
     },
     philosophyIntro:
-      "RCC is a small, vibrant community of families and educators in the heart of Rosslyn — and we want you to understand how we work before you apply.",
+      "At RCC, a sense of community is at the core of every intention, decision, and choice.",
     curriculumIntro:
-      "Emergent, play-powered curriculum with cooperative projects and social-emotional development at the center.",
+      "Emergent, play-based curriculum with cooperative projects and social-emotional development at the center.",
   },
   blocks: {
     hero: {
       kicker: "Rosslyn Children's Center",
       headline: "Joy is the premium.",
       lede:
-        "Seven classrooms. Four colors in the flock. Geometry and play that signal tier-one care without corporate daycare polish — for families who want identity, not a slot.",
+        "Seven classrooms. Four colors in the flock. Geometry and play that signal tier-one care without corporate daycare polish, for families who want identity, not a slot.",
     },
     philosophyIntro:
       "From Froebel blocks to our own four-color flock, RCC believes the simplest elements hold the most expression.",

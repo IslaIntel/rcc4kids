@@ -2,10 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { prefersReducedMotion } from "@/lib/motion";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export function CountUp({
   value,
@@ -28,20 +25,24 @@ export function CountUp({
     }
 
     const obj = { val: 0 };
-    gsap.to(obj, {
+    const tween = gsap.to(obj, {
       val: value,
       duration: 1.2,
       ease: "power2.out",
-      scrollTrigger: { trigger: el, start: "top 90%", once: true },
       onUpdate: () => {
         el.textContent = `${Math.round(obj.val)}${suffix}`;
       },
     });
+
+    return () => {
+      tween.kill();
+    };
   }, [value, suffix]);
 
   return (
     <span ref={ref} className={className}>
-      0{suffix}
+      {value}
+      {suffix}
     </span>
   );
 }

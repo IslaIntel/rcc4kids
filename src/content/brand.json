@@ -1,31 +1,33 @@
 {
-  "name": "Rosslyn Children's Center",
+  "name": "RCC4Kids",
+  "legalName": "Rosslyn Children's Center",
   "short": "RCC",
   "domain": "rcc4kids.com",
   "tagline": "Guiding children's learning through play since 1991.",
   "voice": {
-    "tone": ["warm", "specific", "adult", "honest"],
+    "tone": ["professional", "friendly", "inspirational"],
     "do": [
-      "Use emergent, child-led, play-powered language",
-      "Name real ratios, tenure, and waitlist honestly",
-      "Speak to dual-income Rosslyn parents as partners"
+      "Speak to Rosslyn parents as partners in a neighborhood school",
+      "Name real ratios, hours, waitlists, and Freedom Park before adjectives",
+      "Treat community as a practice: tours, conferences, park walks, a parent board"
     ],
     "dont": [
       "little ones",
       "kiddos",
       "where magic happens",
+      "premier daycare",
       "Reggio Emilia on the public site unless confirmed"
     ]
   },
   "palette": {
-    "charcoal": "#303030",
-    "green": "#009040",
-    "cardinal": "#E05020",
-    "gold": "#F0E030",
-    "sky": "#2070B0",
-    "paper": "#F6F1E8",
+    "green": "#0AF50E",
+    "yellow": "#E5E907",
+    "blue": "#0110E4",
+    "red": "#EF0B0B",
+    "paper": "#FAF8F4",
     "cream": "#FAF8F4",
-    "ink": "#1A1A1A"
+    "ink": "#1A1714",
+    "muted": "#5C5348"
   },
   "classroomColors": {
     "blue-jays": "#2070B0",
@@ -41,9 +43,8 @@
     "nvMag2026": "/brand/BestDaycare26Teal.webp"
   },
   "typography": {
-    "documentation": { "display": "Newsreader", "body": "IBM Plex Sans" },
-    "viewbook": { "display": "Fraunces", "body": "Outfit" },
-    "blocks": { "display": "Syne", "body": "DM Sans" }
+    "display": "Nunito",
+    "body": "Nunito Sans"
   },
   "motion": {
     "durationFast": 280,

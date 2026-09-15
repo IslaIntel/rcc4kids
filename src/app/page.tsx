@@ -1,5 +1,5 @@
-import { redirect } from "next/navigation";
+import { ViewbookLanding } from "@/components/concepts/ViewbookLanding";
 
 export default function Home() {
-  redirect("/concepts");
+  return <ViewbookLanding />;
 }

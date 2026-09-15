@@ -1,5 +1,5 @@
-import { HubPage } from "@/components/concepts/HubPage";
+import { redirect } from "next/navigation";
 
-export default function ConceptsHubPage() {
-  return <HubPage />;
+export default function ConceptsHub() {
+  redirect("/");
 }

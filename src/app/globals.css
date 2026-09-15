@@ -5,8 +5,8 @@
 }
 
 @theme inline {
-  --font-display: var(--font-display-fallback), Georgia, serif;
-  --font-sans: var(--font-body-fallback), system-ui, sans-serif;
+  --font-display: var(--font-nunito), ui-rounded, system-ui, sans-serif;
+  --font-sans: var(--font-nunito-sans), ui-sans-serif, system-ui, sans-serif;
   --animate-marquee: marquee 28s linear infinite;
   --animate-float: float 6s ease-in-out infinite;
   --animate-float-delayed: float 6s ease-in-out 1.5s infinite;
@@ -28,27 +28,13 @@ html {
 
 body {
   background: var(--tone-bg, #faf8f4);
-  color: var(--tone-fg, #1a1a1a);
+  color: var(--tone-fg, #1a1714);
   font-family: var(--font-sans);
 }
 
 .font-display {
   font-family: var(--font-display);
-}
-
-.tone-documentation {
-  --font-display-fallback: "Newsreader", Georgia, serif;
-  --font-body-fallback: "IBM Plex Sans", system-ui, sans-serif;
-}
-
-.tone-viewbook {
-  --font-display-fallback: "Fraunces", Georgia, serif;
-  --font-body-fallback: "Outfit", system-ui, sans-serif;
-}
-
-.tone-blocks {
-  --font-display-fallback: "Syne", system-ui, sans-serif;
-  --font-body-fallback: "DM Sans", system-ui, sans-serif;
+  letter-spacing: -0.02em;
 }
 
 @media (prefers-reduced-motion: reduce) {

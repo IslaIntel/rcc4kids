@@ -1,5 +1,5 @@
-import { BlocksLanding } from "@/components/concepts/BlocksLanding";
+import { redirect } from "next/navigation";
 
-export default function BlocksPage() {
-  return <BlocksLanding />;
+export default function BlocksConcept() {
+  redirect("/");
 }

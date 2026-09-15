@@ -9,7 +9,7 @@ export function Philosophy({ concept }: { concept: ConceptSlug }) {
   return (
     <Section id="philosophy" className="bg-[var(--tone-paper)]">
       <ClipReveal>
-        <p className="text-xs font-medium uppercase tracking-[0.2em] text-[var(--tone-accent)]">
+        <p className="text-xs font-medium uppercase tracking-[0.2em] text-[var(--tone-muted)]">
           Philosophy
         </p>
         <h2 className="mt-3 max-w-3xl font-display text-3xl text-[var(--tone-fg)] md:text-4xl">

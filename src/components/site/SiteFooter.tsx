@@ -10,7 +10,7 @@ export function SiteFooter() {
           <div>
             <Image
               src={media.logo}
-              alt={brand.name}
+              alt={brand.legalName}
               width={140}
               height={40}
               className="mb-4 h-8 w-auto brightness-0 invert"
@@ -52,7 +52,7 @@ export function SiteFooter() {
           {business.nondiscrimination}
         </p>
         <p className="mt-4 text-xs text-white/40">
-          © {new Date().getFullYear()} {brand.name}. All rights reserved.
+          © {new Date().getFullYear()} {brand.legalName}. All rights reserved.
         </p>
       </div>
     </footer>

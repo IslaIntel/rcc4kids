@@ -36,7 +36,7 @@ export function TourForm({ concept }: { concept: ConceptSlug }) {
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Failed");
       setStatus("success");
-      setMessage("Thank you — a member of our team will be in touch to schedule your tour.");
+      setMessage("Thank you. A member of our team will be in touch to schedule your tour.");
       formEl.reset();
     } catch (err) {
       setStatus("error");
@@ -135,7 +135,7 @@ export function TourForm({ concept }: { concept: ConceptSlug }) {
               type="submit"
               data-submit-tour
               disabled={status === "loading"}
-              className="inline-flex min-h-11 min-w-44 items-center justify-center rounded-full bg-[var(--tone-accent)] px-8 text-sm font-semibold text-white disabled:opacity-60"
+              className="inline-flex min-h-11 min-w-44 items-center justify-center rounded-full bg-[var(--tone-primary)] px-8 text-sm font-semibold text-[var(--tone-on-primary)] disabled:opacity-60"
             >
               {status === "loading" ? "Sending…" : "Request tour"}
             </button>
