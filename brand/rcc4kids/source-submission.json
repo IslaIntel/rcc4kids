@@ -1,0 +1,82 @@
+{
+  "submission_id": "201a786a-8b9a-42ed-902e-5f8a353a83cd",
+  "submitted_at": "2026-09-15T15:21:25.132Z",
+  "form_version": "4.0",
+  "client_id": null,
+  "source": "Brand Discovery",
+  "form_id": "islaintel_brand_discovery_survey",
+  "source_url": "https://survey.islaintel.com/brand-discovery/",
+  "submissionId": "201a786a-8b9a-42ed-902e-5f8a353a83cd",
+  "submittedAt": "2026-09-15T15:21:25.132Z",
+  "company": "Rosslyn Children's Center",
+  "firstName": "Dawn",
+  "lastName": "Snyder",
+  "email": "dawn@rcc4kids.com",
+  "brandName": "Rosslyn Children's Center",
+  "brandOneLiner": "Provide childcare for children ages 3 months through 6 years.",
+  "website": "www.rcc4kids.com",
+  "voice": "Professional, Friendly, Inspirational",
+  "primaryColor": "#0AF50E",
+  "secondaryColor": "#E5E907",
+  "accentColor": "#0110E4",
+  "extraColors": [
+    {
+      "label": "Supporting",
+      "hex": "#EF0B0B"
+    }
+  ],
+  "fontMode": "direction",
+  "fontVibe": "Soft",
+  "headingFont": "Nunito",
+  "subheadFont": "Nunito Sans",
+  "bodyFont": "Nunito Sans",
+  "typePool": "Nunito / Nunito Sans / Nunito Sans · Fredoka / Quicksand / Quicksand · Comfortaa / Nunito / Nunito · Varela Round / Nunito / Nunito · Rubik / Karla / Karla · Quicksand / Nunito / Nunito · Outfit / Nunito / Nunito · Baloo 2 / Nunito / Nunito · Poppins / Nunito Sans / Nunito Sans · Manrope / Nunito / Nunito · Figtree / Nunito Sans / Nunito Sans · Lexend / Nunito Sans / Nunito Sans",
+  "primaryGoal": "Community",
+  "slack_message": "*Brand Discovery* — Rosslyn Children's Center\nContact: Dawn Snyder · dawn@rcc4kids.com\nVoice: Professional, Friendly, Inspirational\nColors: #0AF50E · #E5E907 · #0110E4 + #EF0B0B\nType: Soft — Nunito / Nunito Sans / Nunito Sans\nPool: 12 pairings in Soft direction\nGoal: Community",
+  "brand": {
+    "name": "Rosslyn Children's Center",
+    "one_liner": "Provide childcare for children ages 3 months through 6 years.",
+    "website_url": "www.rcc4kids.com"
+  },
+  "voice_ids": ["professional", "friendly", "inspirational"],
+  "colors": {
+    "primary": "#0AF50E",
+    "secondary": "#E5E907",
+    "accent": "#0110E4"
+  },
+  "extra_colors": [
+    {
+      "label": "Supporting",
+      "hex": "#EF0B0B"
+    }
+  ],
+  "palette_id": null,
+  "typography": {
+    "mode": "direction",
+    "vibe_id": "soft",
+    "vibe": "Soft",
+    "pairing_id": "nunito-pair",
+    "heading_font": "Nunito",
+    "subhead_font": "Nunito Sans",
+    "body_font": "Nunito Sans",
+    "pool": [
+      "Nunito / Nunito Sans / Nunito Sans",
+      "Fredoka / Quicksand / Quicksand",
+      "Comfortaa / Nunito / Nunito",
+      "Varela Round / Nunito / Nunito",
+      "Rubik / Karla / Karla",
+      "Quicksand / Nunito / Nunito",
+      "Outfit / Nunito / Nunito",
+      "Baloo 2 / Nunito / Nunito",
+      "Poppins / Nunito Sans / Nunito Sans",
+      "Manrope / Nunito / Nunito",
+      "Figtree / Nunito Sans / Nunito Sans",
+      "Lexend / Nunito Sans / Nunito Sans"
+    ]
+  },
+  "goal_id": "community",
+  "contact": {
+    "name": "Dawn Snyder",
+    "email": "dawn@rcc4kids.com"
+  }
+}

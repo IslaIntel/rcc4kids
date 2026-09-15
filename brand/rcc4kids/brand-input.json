@@ -1,0 +1,55 @@
+{
+  "schema_version": "brand-x/1.0",
+  "source": {
+    "form_id": "islaintel_brand_discovery_survey",
+    "form_version": "4.0",
+    "submission_id": "201a786a-8b9a-42ed-902e-5f8a353a83cd",
+    "submitted_at": "2026-09-15T15:21:25.132Z",
+    "source_url": "https://survey.islaintel.com/brand-discovery/"
+  },
+  "brand": {
+    "name": "Rosslyn Children's Center",
+    "one_liner": "Provide childcare for children ages 3 months through 6 years.",
+    "website_url": "https://www.rcc4kids.com"
+  },
+  "contact": {
+    "name": "Dawn Snyder",
+    "email": "dawn@rcc4kids.com"
+  },
+  "voice": [
+    "professional",
+    "friendly",
+    "inspirational"
+  ],
+  "colors": {
+    "primary": "#0AF50E",
+    "secondary": "#E5E907",
+    "accent": "#0110E4",
+    "extra": [
+      "#EF0B0B"
+    ]
+  },
+  "typography": {
+    "mode": "direction",
+    "vibe": "Soft",
+    "pairing_id": "nunito-pair",
+    "heading": "Nunito",
+    "subhead": "Nunito Sans",
+    "body": "Nunito Sans",
+    "pool": [
+      "Nunito / Nunito Sans / Nunito Sans",
+      "Fredoka / Quicksand / Quicksand",
+      "Comfortaa / Nunito / Nunito",
+      "Varela Round / Nunito / Nunito",
+      "Rubik / Karla / Karla",
+      "Quicksand / Nunito / Nunito",
+      "Outfit / Nunito / Nunito",
+      "Baloo 2 / Nunito / Nunito",
+      "Poppins / Nunito Sans / Nunito Sans",
+      "Manrope / Nunito / Nunito",
+      "Figtree / Nunito Sans / Nunito Sans",
+      "Lexend / Nunito Sans / Nunito Sans"
+    ]
+  },
+  "goal": "community"
+}

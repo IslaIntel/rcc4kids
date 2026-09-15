@@ -1,0 +1,363 @@
+name: "RCC4Kids"
+legal_name: "Rosslyn Children's Center"
+analyzed_from: "https://www.rcc4kids.com"
+analyzed_on: "2026-09-15"
+submission_id: "201a786a-8b9a-42ed-902e-5f8a353a83cd"
+philosophy: >-
+  A neighborhood school that writes in rounded letters and paints in playground
+  primaries. Recess-loud color, parent-board-careful words. The flower mark stays
+  the institutional seal; RCC4Kids is the public name. Tension: professional
+  Rosslyn childcare versus crayon-box joy — hold both, never collapse into
+  corporate daycare or cartoon preschool.
+primary_mode: "light"
+brand_domain: "Nonprofit child day center / infant through preschool, Rosslyn, Arlington"
+brand_type: "content-rich"
+ownership: "own"
+mono_for_code: false
+mono_for_metrics: false
+spelling:
+  public: "RCC4Kids"
+  legal: "Rosslyn Children's Center"
+  short: "RCC"
+  domain: "rcc4kids.com"
+  never:
+    - "RCC4kids"
+    - "RCC 4 Kids"
+    - "RCC for Kids"
+    - "Rcc4Kids"
+    - "rcc4kids" # display type only; URLs stay lowercase
+  note: >-
+    Survey listed the legal name. IslaIntel instruction is that the public brand
+    is spelled RCC4Kids — capital RCC, numeral 4, capital K.
+
+primitives:
+  colors:
+    # Warm paper neutrals — not cool UI gray. Observed cream from current site concepts,
+    # deepened for accessible ink.
+    neutral:
+      50: "#FFFEF9"
+      100: "#FAF8F4"
+      200: "#F0EBE3"
+      300: "#DDD4C8"
+      400: "#B8AB9A"
+      500: "#8A7D6C"
+      600: "#5C5348"
+      700: "#3F3A34"
+      800: "#2A2622"
+      900: "#1A1714"
+      950: "#100E0C"
+    # Survey primary #0AF50E — playground green. 500 is exact.
+    brand:
+      50: "#ECFDEC"
+      100: "#D1FAD2"
+      200: "#9DF79F"
+      300: "#5BF65E"
+      400: "#3BF53E"
+      500: "#0AF50E"
+      600: "#08BF0B"
+      700: "#068708"
+      800: "#045D05"
+      900: "#023603"
+    # Survey secondary #E5E907 — playground yellow. 500 is exact.
+    yellow:
+      50: "#FEFEE8"
+      100: "#FBFBB8"
+      200: "#F6F86A"
+      300: "#F0F32E"
+      400: "#EAEE12"
+      500: "#E5E907"
+      600: "#B8BB06"
+      700: "#7A7C04"
+      800: "#4D4E03"
+      900: "#2A2B01"
+    # Survey accent #0110E4 — electric blue. 500 is exact. The accessible action color.
+    blue:
+      50: "#EEF0FE"
+      100: "#D4D8FC"
+      200: "#9BA3F8"
+      300: "#6270F4"
+      400: "#293CF0"
+      500: "#0110E4"
+      600: "#010DB6"
+      700: "#010A88"
+      800: "#01065A"
+      900: "#000333"
+    # Survey supporting #EF0B0B. 500 is exact. Classroom energy, never body text.
+    red:
+      50: "#FEECEC"
+      100: "#FDC8C8"
+      200: "#FA8A8A"
+      300: "#F64C4C"
+      400: "#F22424"
+      500: "#EF0B0B"
+      600: "#C00909"
+      700: "#910707"
+      800: "#610505"
+      900: "#3A0303"
+  spacing: [0, 4, 8, 12, 16, 24, 32, 48, 64, 96, 128]
+  radii: [16, 24, 999] # soft controls 16 · cards 24 · pills — Soft vibe, not chrome
+
+tokens:
+  colors:
+    light:
+      background: "{neutral.100}"
+      surface1: "#FFFFFF"
+      surface2: "{neutral.50}"
+      border: "{neutral.200}"
+      border_visible: "{neutral.300}"
+      text1: "{neutral.900}"
+      text2: "{neutral.600}"
+      text3: "{neutral.500}"
+      accent: "{brand.500}"
+      accent_subtle: "{brand.50}"
+      on_accent: "{neutral.900}"
+      action: "{blue.500}"
+      on_action: "#FFFFFF"
+      highlight: "{yellow.500}"
+      on_highlight: "{neutral.900}"
+      supporting: "{red.500}"
+      on_supporting: "#FFFFFF"
+    dark:
+      background: "{neutral.950}"
+      surface1: "{neutral.900}"
+      surface2: "{neutral.800}"
+      border: "rgba(250,248,244,0.10)"
+      border_visible: "rgba(250,248,244,0.18)"
+      text1: "{neutral.100}"
+      text2: "{neutral.400}"
+      text3: "{neutral.500}"
+      accent: "{brand.500}"
+      accent_subtle: "rgba(10,245,14,0.12)"
+      on_accent: "{neutral.900}"
+      action: "{blue.300}"
+      on_action: "{neutral.950}"
+      highlight: "{yellow.500}"
+      on_highlight: "{neutral.900}"
+      supporting: "{red.400}"
+      on_supporting: "#FFFFFF"
+    success: "{brand.700}"
+    warning: "{yellow.700}"
+    error: "{red.600}"
+
+  spacing: { xs: 4, sm: 8, md: 16, lg: 24, xl: 32, 2xl: 48, 3xl: 64, 4xl: 96 }
+
+  radii:
+    control: 16
+    component: 24
+    container: 32
+    pill: 999
+
+  typography:
+    google_fonts:
+      - "Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400"
+      - "Nunito Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;1,6..12,400"
+    display:
+      family: "Nunito"
+      weight: 800
+      why: "Survey Soft direction, pairing nunito-pair. Rounded geometric display that reads as a children's center without becoming a novelty font."
+    subhead:
+      family: "Nunito Sans"
+      weight: 600
+      why: "Survey subhead. Same family, less round, so section titles stay friendly without competing with display."
+    body:
+      family: "Nunito Sans"
+      weight: 400
+      why: "Survey body. Humanist sans at 18px for parent-facing copy; professional enough for tuition and licensing, soft enough for community."
+    scale:
+      display: { size: 56, line_height: 1.08, letter_spacing: "-0.02em", weight: 800 }
+      heading: { size: 36, line_height: 1.15, letter_spacing: "-0.015em", weight: 700 }
+      subheading: { size: 22, line_height: 1.3, letter_spacing: "0", weight: 600 }
+      body: { size: 18, line_height: 1.5, letter_spacing: "0", weight: 400 }
+      body_sm: { size: 16, line_height: 1.5, letter_spacing: "0", weight: 400 }
+      caption: { size: 13, line_height: 1.45, letter_spacing: "0", weight: 400 }
+      label: { size: 11, line_height: 1.2, letter_spacing: "0.14em", weight: 700 }
+
+  elevation:
+    strategy: "soft-lift"
+    shadow: "0 12px 32px rgba(26,23,20,0.08)"
+
+  motion:
+    personality: "gentle"
+    easing: "cubic-bezier(0.16, 1, 0.3, 1)"
+    duration: "280ms"
+    why: "Observed in the in-progress site motion tokens; matches Soft vibe without bounce."
+
+brand:
+  logo:
+    treatment: "combination"
+    file: "assets/RCC_Horizontal-4C.png"
+    source: "observed — live site https://www.rcc4kids.com/wp-content/uploads/RCC_Horizontal-4C.png"
+    rendering: >-
+      Owned rainbow-petal flower plus gray ROSSLYN CHILDREN'S CENTER lockup.
+      Public brand spelling RCC4Kids is a separate Nunito ExtraBold wordmark;
+      the numeral 4 sits in playground green. Do not redraw the flower.
+    clearspace: "1× flower height on all sides of the combination mark"
+    min_size: "28px flower height digital; RCC4Kids wordmark 20px cap-height"
+    reverse: "Flower on dark or color fields; gray lockup becomes white. Never invert the rainbow petals."
+    misuse:
+      - "Never spell the public brand RCC4kids, RCC 4 Kids, or rcc4kids in display type"
+      - "Never recolor the flower to a single flat survey color"
+      - "Never set RCC4Kids in the logo's gray gothic; that lockup stays Rosslyn Children's Center"
+      - "Never outline, rotate, or drop-shadow the flower"
+      - "Never lock the RCC4Kids wordmark inside the flower"
+      - "Never place the gray lockup on a dark field without switching to the reverse"
+
+  voice:
+    adjectives: ["professional", "friendly", "inspirational"]
+    goal: "community"
+    principles:
+      - "Speak to Rosslyn parents as partners in a neighborhood school, not customers of a chain."
+      - "Name real facts — ratios, licensed hours, waitlists, Freedom Park — before adjectives."
+      - "Community is a practice (tours, conferences, park walks, a parent board), never a vague claim about family."
+      - "Inspire through children's actual work and play, not magic language."
+    examples:
+      - do: "Community is at the core of every intention, decision, and choice at RCC."
+        dont: "Where little ones blossom and magic happens every day."
+      - do: "Seven classrooms. Ratios from 1:4 to 1:10. Licensed for 80 children, 7:30am to 6:00pm."
+        dont: "A premier luxury daycare experience for busy professionals."
+      - do: "Lesson plans follow what is relevant to the children — a new puppy, a sibling, a move."
+        dont: "Our innovative curriculum prepares your child for kindergarten success."
+      - do: "Plan a tour. See a day in the life before you apply."
+        dont: "Secure your spot in our exclusive program today!"
+
+  imagery:
+    direction: >-
+      Environments, materials, documentation walls, and Freedom Park — the work
+      is the picture. Staff portraits belong on people pages only. The live site
+      currently uses Unsplash daycare stock; that is explicitly out of the system.
+      Until owned classroom photography is in the repo, use labeled fields rather
+      than substitutes. Never generate children's faces.
+    missing:
+      - "Classroom photography referenced in the repo (infant, toddler, twos, preschool) is not in public/"
+      - "Atmosphere stills (documentation studio, blocks, Freedom Park) are not in public/"
+      - "Do not use the live site's Unsplash slides as brand photography"
+    treatments:
+      - { name: "block-frame", css: "rounded", radius: "{radii.component}", note: "Photo sits inside a 24px rounded field with one survey-color edge" }
+      - { name: "paper-mat", css: "border", tint: "{neutral.100}", note: "Warm paper around the crop, like a documentation page" }
+      - { name: "flock-bar", css: "left-border", tint: "{brand.500}|{yellow.500}|{blue.500}|{red.500}", note: "One playground color per classroom, never all four on one image" }
+    aspect_ratios: ["3:2 environment", "16:9 campus", "1:1 staff portrait"]
+    dos:
+      - "Hands, materials, block structures, documentation panels, Freedom Park paths"
+      - "One playground color as a frame, not a rainbow overlay"
+      - "Honest empty slots labeled PHOTO — classroom environment until files land"
+    donts:
+      - "Unsplash or stock daycare children"
+      - "Photorealistic generated children's faces"
+      - "Rainbow gradients except the owned flower mark"
+      - "Lifestyle parents-with-laptops hero photography"
+
+  iconography:
+    observed_style: "Live WordPress theme uses generic Font Awesome. In-progress site is type-led with almost no icons."
+    fallback_kit:
+      name: "Lucide"
+      weight: "regular (1.75px stroke, rounded joins)"
+      cdn: "https://unpkg.com/lucide@latest/dist/umd/lucide.js"
+      match_reasoning: "Rounded joins match Nunito's soft geometry; use sparingly — this is a content-rich brand, not an icon system."
+
+  facts:
+    formed: 1991
+    type: "501(c)(3)"
+    license: "Virginia Child Day Center, capacity 80, ages 3 months – 6 years 11 months"
+    hours: "7:30am – 6:00pm, Monday – Friday"
+    address: "1101 Wilson Blvd #100, Arlington, VA 22209"
+    phone: "(703) 524-0202"
+    programs: "Infant 1:4 · Toddler 1:4 · Twos 1:6 · Preschool 1:10"
+    press: "Northern Virginia Magazine Best Daycares 2023, 2026"
+    cta: "Plan a tour"
+    mission: >-
+      We are a community of families and educators working in partnership to
+      provide a joyful environment where children are encouraged to explore and
+      interact with the world around them.
+
+components:
+  button_primary:
+    source: "derived"
+    justification: >-
+      Survey accent #0110E4 is the only core color that can carry white text at
+      body sizes. Enrollment is a professional action for dual-income Rosslyn
+      parents, so the primary CTA is electric blue, pill-shaped (observed on the
+      in-progress site), not neon green.
+    background: "{tokens.action}"
+    color: "{tokens.on_action}"
+    border: "none"
+    padding: "14px 28px"
+    radius: "{radii.pill}"
+    font_weight: 700
+    font_family: "Nunito Sans"
+  button_secondary:
+    source: "derived"
+    justification: "Survey primary green as a friendly second action; ink text because white on #0AF50E fails contrast."
+    background: "{brand.500}"
+    color: "{tokens.on_accent}"
+    border: "none"
+    padding: "14px 28px"
+    radius: "{radii.pill}"
+    font_weight: 700
+  button_ghost:
+    source: "derived"
+    justification: "Quiet third action for Explore programs; warm hairline, no chrome."
+    background: "transparent"
+    color: "{tokens.text1}"
+    border: "1.5px solid {tokens.border_visible}"
+    padding: "14px 28px"
+    radius: "{radii.pill}"
+    font_weight: 700
+  card:
+    source: "derived"
+    justification: "Soft vibe + content-rich: white paper on cream, 24px radius, one playground-color edge when the card is a classroom."
+    background: "#FFFFFF"
+    border: "1px solid {tokens.border}"
+    padding: "28px"
+    radius: "{radii.component}"
+  badge:
+    source: "derived"
+    justification: "Yellow is the survey secondary — use as a community/classroom chip, always with ink, never as a warning."
+    background: "{yellow.500}"
+    color: "{neutral.900}"
+    border: "none"
+    padding: "6px 14px"
+    radius: "{radii.pill}"
+    font_size: 13
+    font_weight: 700
+  input:
+    source: "derived"
+    justification: "Tour form is the only conversion surface; 16px control radius keeps Soft without looking like a toy."
+    background: "#FFFFFF"
+    border: "1.5px solid {tokens.border_visible}"
+    padding: "12px 16px"
+    radius: "{radii.control}"
+  block:
+    source: "derived"
+    justification: >-
+      Signature motif: rounded-rectangle color blocks in the four survey colors,
+      stacked like wooden gifts. One color per block. This is how the brand
+      shows joy without illustrating children.
+    radius: 20
+    colors: ["{brand.500}", "{yellow.500}", "{blue.500}", "{red.500}"]
+
+applications:
+  social_card:
+    headline: "A neighborhood school in the heart of Rosslyn."
+    sub: "Infant through preschool. Community at the core. Plan a tour at RCC4Kids."
+    handle: "@rcc4kids"
+  slide_cover:
+    kicker: "RCC4Kids · Rosslyn Children's Center"
+    headline: "Community is the curriculum."
+    presenter: "Family information session"
+  email_header:
+    preheader: "This week at RCC4Kids"
+    headline: "What the children are following right now."
+
+anti_patterns:
+  - "Never spell the public brand RCC4kids, RCC 4 Kids, RCCforkids, or rcc4kids in display type — it is RCC4Kids"
+  - "Never set body copy or captions in #0AF50E, #E5E907, or #EF0B0B — those colors are blocks and marks, not text"
+  - "Never put white type on playground green or yellow; both carry ink {neutral.900}"
+  - "Never use Unsplash, Adobe Stock, or generic daycare photography; the live site's current slides are the example of what not to do"
+  - "Never generate or retouch photorealistic children's faces"
+  - "Never write kiddos, little ones, where magic happens, or premier daycare"
+  - "Never recolor, outline, or rainbow-gradient anything except the owned flower mark"
+  - "Never give all four playground colors equal weight on one surface — pick one lead color"
+  - "Never use cool gray or blue-gray paper; neutrals stay warm {neutral.100}"
+  - "Never claim Reggio Emilia, or invent waitlist times, tuition, or testimonials"
+  - "Never set Nunito below the display/heading roles as a UI chrome font — body is Nunito Sans"
+  - "Never use sharp 0-radius corners on cards or buttons; Soft vibe is structural, not decorative"
